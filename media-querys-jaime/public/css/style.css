@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    font-family: "Roboto Mono", monospace;
+    height: 2000px;
+}
+
+.encabezado {
+    width: 100%;
+    height: 110px;
+    background-color: rgb(164, 164, 164);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+}
+
+.encabezado img {
+    width: 100px;
+    height: 100px;
+    border: solid 1px black;
+}
+
+.menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+.menu ol {
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.menu ol li {
+    width: 20%;
+    background-color: black;
+    height: 40px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.menu ol li a {
+    color: white;
+    text-decoration: none;
+    letter-spacing: 2px;
+}
+
+@media (max-width: 500px) {
+    .encabezado {
+        flex-direction: column;
+        height: auto;
+        gap: 10px;
+    }
+
+    .encabezado img {
+        border-radius: 50%;
+    }
+
+    .menu ol {
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .menu ol li {
+        width: 100%;
+    }
+}
+
+.contenido-principal {
+    width: 100%;
+    height: 700px;
+    background-image: url('../img/logo.jpg');
+    background-position: center center;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.contenido-principal h1,
+.contenido-principal span {
+    position: absolute;
+}
+
+.contenido-principal span {
+    width: 60%;
+    height: 70px;
+    background-color: black;
+    opacity: 0.3;
+}
+
+.contenido-principal h1 {
+    z-index: 1;
+    color: white;
+}
+
+@media (max-width: 500px) {
+    .contenido-principal {
+        height: 400px;
+    }
+
+    .contenido-principal span {
+        width: 100%;
+        height: 30px;
+    }
+
+    .contenido-principal h1 {
+        font-size: 16px;
+    }
+}
+
+.slider {
+    width: 100%;
+    height: 700px;
+    transition: ease-in-out all 0.2s;
+    animation: slider infinite 5s;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+@keyframes slider {
+    0%{background-image: url(/public/img/1.jpg);}
+
+    30%{background-image: url(/public/img/2.jpg);}
+
+    70%{background-image: url(/public/img/4.jpg);}
+
+    100%{background-image: url(/public/img/3.jpg);}
+}
