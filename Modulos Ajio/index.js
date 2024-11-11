@@ -51,7 +51,7 @@ while (salir) {
             salir=false;
             break; 
         default:
-            console.log("Invalido hp");
+            alert("Invalido");
             
             break;          
     }
