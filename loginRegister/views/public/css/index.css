@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto Mono", serif;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    min-height: 100vh;
+    background: linear-gradient(#1a163d,#2f2a61,#1a163d);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+}
+
+.login-usuario,
+.register-usuario {
+    width: 30%;
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    box-shadow: 5px 5px 10px black;
+    border-radius: 5px;
+
+}
+.register-usuario{
+    background-color: transparent;
+    display: none;
+}
+#login-usuario_titulo,
+#btnFormRegister{
+    color: #090714;
+}
+
+#register-usuario_titulo,
+#btnFormLogin{
+    color: white;
+}
+.login-usuario{
+    background-color: white;
+}
+.login-usuario,div,input,
+.register-usuario,div,input{
+    border-radius: 7px;
+    padding: 10px;
+}
+input{
+    background-color: #e0dede;
+}
+
+#btnFormLogin,
+#btnFormRegister{
+    cursor: pointer;
+}
+#btnLogin,
+#btnRegister{
+    width: 80%;
+    height: 7%;
+    border-radius: 6px;
+    background-color: #573b8a;
+    color: white;
+}
+#btnFormRegister{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110%;
+    height: 10%;
+    border-radius: 0px 0px 5px 5px;
+    background-color:white;
+    margin-bottom: -10px;
+}
+#btnFormLogin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 110%;
+    height: 10%;
+    border-radius: 5px 5px 0px 0px;
+    background-color:#1a163d;
+    margin-top: -10px;
+}
+
+#btnFormLogin:hover{
+width: 100%;
+height: 100%;
+transition: ease-in-out 2s;
+position: absolute;
+}
+#btnFormRegister:hover{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    }
