@@ -43,6 +43,18 @@ const letras = ['a', 'b', 'c', 'd', 'e', 'f', 'g'];
 const letras2 = letras.slice(0, 3)
 console.log(letras2);
 
+//shift(): eimina el primer elemento de un array
+let nombres = ["Juan", "María", "Pedro", "Ana", "Luis"];
+let primerNombre = nombres.shift();
+console.log("Nombre eliminado:", primerNombre);
+console.log("Array resultante:", nombres);
+
+//unshift (): agrega elementos al inicio de un array
+let frutas = [];
+frutas.unshift("Manzana");
+frutas.unshift("Banana");
+frutas.unshift("Naranja");
+console.log("Array de frutas:", frutas);
 
 
 
